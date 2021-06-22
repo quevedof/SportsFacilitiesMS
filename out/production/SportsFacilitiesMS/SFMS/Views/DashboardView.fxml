@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="838.0" prefWidth="1550.4000244140625" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SFMS.Controllers.DashboardController">
+   <top>
+      <AnchorPane prefHeight="58.0" prefWidth="1551.0" style="-fx-background-color: #000080;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imvMenu" fitHeight="33.0" fitWidth="42.0" layoutX="17.0" layoutY="14.0" onMouseClicked="#imvMenuOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/menuIcon2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblSignOut" layoutX="1393.0" layoutY="17.0" styleClass="topbar" stylesheets="@Style.css" text="Sign Out" textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUsername" layoutX="84.0" layoutY="18.0" textFill="WHITE">
+               <font>
+                  <Font name="Serif Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <HBox fx:id="hBoxNavigation" style="-fx-background-color: #B4D6E4;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="vBoxIcons" maxWidth="62.0" minWidth="54.0" prefHeight="780.0" prefWidth="54.0" spacing="10.0" style="-fx-background-color: #006400;">
+               <children>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/homeIcon.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="15.0" top="17.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="23.0" fitWidth="38.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/facilitiesIcon.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="34.0" layoutX="20.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/competitionsIcon.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="18.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/clientsIcon.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="20.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/reportsIcon.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="20.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/accountIcon.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox fx:id="vBoxNavigationButtons" prefHeight="780.0" prefWidth="145.0" spacing="3.0" style="-fx-background-color: #006400;">
+               <children>
+                  <Button fx:id="btnHome" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onAction="#btnHomeOnAction" prefHeight="26.0" prefWidth="150.0" styleClass="sidebarButton" stylesheets="@Style.css" text="Home">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="btnFacilities" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#btnFacilitiesOnAction" prefHeight="26.0" prefWidth="149.0" styleClass="sidebarButton" stylesheets="@Style.css" text="Facilities" />
+                  <Button fx:id="btnCompetitions" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnCompetitionsOnAction" prefHeight="26.0" prefWidth="150.0" styleClass="sidebarButton" stylesheets="@Style.css" text="Competitions" />
+                  <Button fx:id="btnClients" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#btnClientsOnAction" prefHeight="26.0" prefWidth="150.0" styleClass="sidebarButton" stylesheets="@Style.css" text="Clients" />
+                  <Button fx:id="btnReports" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnReportsOnAction" prefHeight="26.0" prefWidth="150.0" styleClass="sidebarButton" stylesheets="@Style.css" text="Reports" />
+                  <Button fx:id="btnAccount" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnAccountOnAction" prefHeight="26.0" prefWidth="150.0" styleClass="sidebarButton" stylesheets="@Style.css" text="Account" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </left>
+</BorderPane>

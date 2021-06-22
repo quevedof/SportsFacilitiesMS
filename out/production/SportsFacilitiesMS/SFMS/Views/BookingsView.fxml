@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="771.0" prefWidth="1453.0" style="-fx-background-color: #B4D6E4; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SFMS.Controllers.BookingsController">
+   <top>
+      <Label fx:id="lblFacName" text="Football Field 1" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Serif Bold" size="35.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="733.0" prefWidth="1270.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane fx:id="gpCalendar" gridLinesVisible="true" layoutX="62.0" layoutY="64.0" prefHeight="634.0" prefWidth="1358.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.39996337890625" minWidth="10.0" prefWidth="220.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.4000244140625" minWidth="10.0" prefWidth="279.4000244140625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.4000244140625" minWidth="10.0" prefWidth="279.4000244140625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.4000244140625" minWidth="10.0" prefWidth="279.4000244140625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.4000244140625" minWidth="10.0" prefWidth="279.4000244140625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.4000244140625" minWidth="10.0" prefWidth="279.4000244140625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.4000244140625" minWidth="10.0" prefWidth="279.4000244140625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.4000244140625" minWidth="10.0" prefWidth="279.4000244140625" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="lblMonday" text="Label" textAlignment="CENTER" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Serif Bold" size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="55.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="lblTuesday" text="Label" textAlignment="CENTER" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Serif Bold" size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="55.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="lblWednesday" text="Label" textAlignment="CENTER" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Serif Bold" size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="55.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="lblThursday" text="Label" textAlignment="CENTER" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Serif Bold" size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="55.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="lblFriday" layoutX="585.0" layoutY="43.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Serif Bold" size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="55.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="lblSaturday" text="Label" textAlignment="CENTER" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="Serif Bold" size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="55.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="lblSunday" text="Label" textAlignment="CENTER" GridPane.columnIndex="7">
+                     <font>
+                        <Font name="Serif Bold" size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="55.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Block 1:&#10;09:00-11:00" textAlignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Serif Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Block 2:&#10;11:00 - 13:00" textAlignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Serif Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Block 3:&#10;13:00 - 15:00" textAlignment="CENTER" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Serif Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Block 4:&#10;15:00 - 17:00" textAlignment="CENTER" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Serif Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Block 5:&#10;17:00 - 19:00" textAlignment="CENTER" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Serif Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Block 6:&#10;19:00 - 21:00" textAlignment="CENTER" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Serif Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <AnchorPane layoutX="585.0" layoutY="75.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="306.0" layoutY="76.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                     <children>
+                        <HBox layoutX="1.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="146.0" prefHeight="70.0" prefWidth="176.0">
+                           <children>
+                              <VBox prefHeight="70.0" prefWidth="101.0" />
+                              <VBox prefHeight="70.0" prefWidth="42.0" />
+                              <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="36.0" spacing="3.0" />
+                           </children>
+                        </HBox>
+                        <Button layoutY="71.0" mnemonicParsing="false" onAction="#btnAddBookingOnAction" prefHeight="23.0" prefWidth="177.0" style="-fx-base: #19e719;" text="+">
+                           <padding>
+                              <Insets bottom="-2.0" top="-2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+            <DatePicker fx:id="dpBookings" editable="false" layoutX="219.0" layoutY="19.0" onAction="#dpBookingsOnAction" prefHeight="26.0" prefWidth="162.0" />
+            <Label layoutX="121.0" layoutY="23.0" text="Select a date:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Button fx:id="btnClose" layoutX="1356.0" layoutY="17.0" mnemonicParsing="false" onAction="#btnCloseOnAction" prefHeight="30.0" prefWidth="64.0" styleClass="Close" stylesheets="@Style.css" text="Close">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Label layoutX="455.0" layoutY="23.0" text="Checked In" />
+            <Label layoutX="574.0" layoutY="23.0" text="Not Checked In" />
+            <Pane layoutX="542.0" layoutY="25.0" prefHeight="14.0" prefWidth="22.0" style="-fx-background-color: red;" />
+            <Pane layoutX="425.0" layoutY="24.0" prefHeight="14.0" prefWidth="22.0" style="-fx-background-color: green;" />
+            <Label layoutX="1075.0" layoutY="24.0" text="Note: Calendar refreshes every 5 seconds." />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

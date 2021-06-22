@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="446.0" style="-fx-border-color: #000000; -fx-background-color: #B4D6E4;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SFMS.Controllers.ViewFacilityController">
+   <children>
+      <Label fx:id="lblInfo" layoutX="55.0" layoutY="460.0" />
+      <HBox layoutX="84.0" layoutY="94.0" prefHeight="352.0" prefWidth="364.0">
+         <children>
+            <VBox prefHeight="352.0" prefWidth="242.0" spacing="14.0">
+               <children>
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Facility Name" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Activity:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Type:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Price/30mins">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Min. No. of People:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Max. No. of People:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Extra Notes:" />
+               </children>
+            </VBox>
+            <VBox fillWidth="false" prefHeight="352.0" prefWidth="306.0" spacing="8.0">
+               <children>
+                  <TextField fx:id="txtFacName" disable="true" styleClass="TxtFields" stylesheets="@Style.css">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></TextField>
+                  <ComboBox fx:id="cbActivity" disable="true" prefWidth="150.0" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtType" disable="true" prefHeight="26.0" prefWidth="150.0" styleClass="TxtFields" stylesheets="@Style.css">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="txtPrice" disable="true" prefHeight="26.0" prefWidth="68.0" promptText="£00.00" styleClass="TxtFields" stylesheets="@Style.css">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="txtMinPeople" disable="true" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="67.0" styleClass="TxtFields" stylesheets="@Style.css">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="txtMaxPeople" disable="true" layoutX="10.0" layoutY="146.0" prefHeight="26.0" prefWidth="66.0" styleClass="TxtFields" stylesheets="@Style.css">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></TextField>
+                  <TextArea fx:id="txtExtraNotes" disable="true" prefHeight="142.0" prefWidth="188.0" stylesheets="@Style.css">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></TextArea>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="btnClose" layoutX="399.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnCloseOnAction" styleClass="Close" stylesheets="@Style.css" text="Close" />
+      <Label layoutX="172.0" layoutY="25.0" text="View Facility" textAlignment="CENTER">
+         <font>
+            <Font name="Serif Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSave" disable="true" layoutX="182.0" layoutY="494.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="26.0" prefWidth="76.0" styleClass="Save" stylesheets="@Style.css" text="Save">
+         <font>
+            <Font name="Serif Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEdit" layoutX="268.0" layoutY="496.0" mnemonicParsing="false" onAction="#btnEditOnAction" style="-fx-background-radius: 20;" text="Edit">
+         <font>
+            <Font name="Serif Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemove" layoutX="341.0" layoutY="496.0" mnemonicParsing="false" onAction="#btnRemoveOnAction" style="-fx-background-radius: 20;" text="Remove">
+         <font>
+            <Font name="Serif Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

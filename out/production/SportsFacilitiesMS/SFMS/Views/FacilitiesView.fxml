@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="parentPane" prefHeight="754.0" prefWidth="1350.0" style="-fx-background-color: #B4D6E4;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SFMS.Controllers.FacilitiesController">
+   <top>
+      <AnchorPane prefHeight="753.0" prefWidth="1350.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane layoutX="67.0" layoutY="105.0" prefHeight="599.0" prefWidth="1102.0" style="-fx-border-width: 5; -fx-border-color: #006400; -fx-border-radius: 10; -fx-background-radius: 10; -fx-background: #98FB98;">
+               <content>
+                  <GridPane fx:id="gpFacilitiesList" hgap="20.0" style="-fx-border-radius: 2; -fx-background-radius: 2;" vgap="20.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="240.0" prefWidth="240.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="240.0" prefWidth="240.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="240.0" prefWidth="240.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="250.0" prefWidth="240.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="310.0" prefHeight="310.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <padding>
+                        <Insets left="40.0" top="40.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+            <Button fx:id="btnAddFacility" layoutX="1180.0" layoutY="105.0" mnemonicParsing="false" onAction="#btnAddFacilityOnAction" prefHeight="38.0" prefWidth="148.0" text="+ Add Facilty">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <Label layoutX="606.0" layoutY="27.0" text="Facilities" textFill="NAVY" underline="true">
+               <font>
+                  <Font name="Rockwell Nova Extra Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbActivity" layoutX="193.0" layoutY="71.0" onAction="#cbActivityOnAction" prefWidth="150.0" promptText="Select Activity" />
+            <Label layoutX="123.0" layoutY="74.0" text="Filters:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

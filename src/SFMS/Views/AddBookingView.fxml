@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="446.0" style="-fx-border-color: #000000; -fx-background-color: #B4D6E4;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SFMS.Controllers.AddBookingController">
+   <children>
+      <Label fx:id="lblInfo" layoutX="84.0" layoutY="430.0" />
+      <HBox layoutX="84.0" layoutY="94.0" prefHeight="316.0" prefWidth="364.0">
+         <children>
+            <VBox prefHeight="374.0" prefWidth="184.0" spacing="12.0">
+               <children>
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Facility:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Client's Name:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Contact:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Date:">
+                     <VBox.margin>
+                        <Insets top="45.0" />
+                     </VBox.margin></Label>
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Time:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Duration:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Number of People:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Price:" />
+               </children>
+            </VBox>
+            <VBox fillWidth="false" prefHeight="559.0" prefWidth="282.0" spacing="8.0">
+               <children>
+                  <TextField fx:id="txtFacName" editable="false" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtClientName" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtContactNum" prefHeight="26.0" prefWidth="150.0" promptText="Mob. Number" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtContactEmail" promptText="Email" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtDate" editable="false" prefHeight="26.0" prefWidth="100.0" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <ComboBox fx:id="cbTime" onAction="#cbTimeOnAction" prefWidth="150.0" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <ComboBox fx:id="cbDuration" onAction="#cbDurationOnAction" prefWidth="150.0" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <ComboBox fx:id="cbNumPeople" prefWidth="150.0" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtPrice" editable="false" prefHeight="26.0" prefWidth="97.0" styleClass="TxtFields" stylesheets="@Style.css" />
+               </children></VBox>
+         </children>
+      </HBox>
+      <Button fx:id="btnClose" layoutX="399.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnCloseOnAction" styleClass="Close" stylesheets="@Style.css" text="Close" />
+      <Label layoutX="172.0" layoutY="25.0" text="New Booking" textAlignment="CENTER">
+         <font>
+            <Font name="Serif Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSave" layoutX="300.0" layoutY="460.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="26.0" prefWidth="76.0" styleClass="Save" stylesheets="@Style.css" text="Save">
+         <font>
+            <Font name="Serif Bold" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

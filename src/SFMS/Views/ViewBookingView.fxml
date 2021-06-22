@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parentPane" prefHeight="538.0" prefWidth="448.0" style="-fx-border-color: #000000; -fx-background-color: #B4D6E4;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SFMS.Controllers.ViewBookingController">
+   <children>
+      <HBox layoutX="70.0" layoutY="95.0" prefHeight="326.0" prefWidth="357.0">
+         <children>
+            <VBox fx:id="vbPane" prefHeight="326.0" prefWidth="218.0" spacing="14.0">
+               <children>
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Facility:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Client's Name:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Contact:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Date:">
+                     <VBox.margin>
+                        <Insets top="48.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Time:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Duration:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Number of People:">
+                     <VBox.margin>
+                        <Insets top="2.0" />
+                     </VBox.margin></Label>
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Price:" />
+               </children>
+            </VBox>
+            <VBox fillWidth="false" prefHeight="559.0" prefWidth="282.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="txtFacName" editable="false" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtClientName" editable="false" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtContactNum" editable="false" prefHeight="26.0" prefWidth="150.0" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtContactEmail" editable="false" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtDate" editable="false" prefHeight="26.0" prefWidth="102.0" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtTime" editable="false" prefHeight="26.0" prefWidth="101.0" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtDuration" editable="false" prefHeight="26.0" prefWidth="102.0" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtNumPeople" editable="false" prefHeight="26.0" prefWidth="101.0" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtPrice" editable="false" prefHeight="26.0" prefWidth="102.0" styleClass="TxtFields" stylesheets="@Style.css" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="btnClose" layoutX="391.0" layoutY="27.0" mnemonicParsing="false" onAction="#btnCloseOnAction" styleClass="Close" stylesheets="@Style.css" text="Close" />
+      <Label layoutX="162.0" layoutY="25.0" text="View Booking">
+         <font>
+            <Font name="Serif Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRemove" layoutX="209.0" layoutY="468.0" mnemonicParsing="false" onAction="#btnRemoveOnAction" prefHeight="37.0" prefWidth="138.0" style="-fx-background-radius: 20;" text="Remove Booking">
+         <font>
+            <Font name="Serif Bold" size="16.0" />
+         </font></Button>
+      <Label fx:id="lblInfo" layoutX="196.0" layoutY="469.0" />
+   </children>
+</AnchorPane>

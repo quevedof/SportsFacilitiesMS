@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="753.0" prefWidth="1350.0" style="-fx-background-color: #B4D6E4;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SFMS.Controllers.ReportsController">
+   <children>
+      <Label layoutX="619.0" layoutY="14.0" text="Reports" textFill="NAVY" underline="true">
+         <font>
+            <Font name="Rockwell Nova Extra Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="lgBookings" animated="false" layoutX="46.0" layoutY="164.0" prefHeight="382.0" prefWidth="676.0" style="-fx-border-color: green; -fx-border-radius: 20;">
+        <xAxis>
+          <CategoryAxis label="Day Number" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Number of Bookings" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <PieChart fx:id="pcFacilities" animated="false" labelLineLength="30.0" layoutX="801.0" layoutY="158.0" legendVisible="false" prefHeight="390.0" prefWidth="502.0" style="-fx-border-color: green; -fx-border-radius: 20;" />
+      <Label layoutX="68.0" layoutY="84.0" text="Month's Total Bookings:">
+         <font>
+            <Font name="Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbMonths" layoutX="68.0" layoutY="126.0" onAction="#cbMonthsOnAction" prefWidth="150.0" promptText="Select Month" visibleRowCount="8" />
+      <Label layoutX="822.0" layoutY="98.0" text="Facility Usage:">
+         <font>
+            <Font name="Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="46.0" layoutY="593.0" prefHeight="110.0" prefWidth="635.0">
+         <children>
+            <HBox spacing="30.0" style="-fx-border-radius: 10px 10px 0px 0px; -fx-border-color: #000080; -fx-border-width: 2;">
+               <children>
+                  <Label text="Revenue:">
+                     <font>
+                        <Font name="Serif Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="12.0" left="10.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ProgressBar fx:id="pbRevenue" prefWidth="200.0" progress="0.6">
+                     <HBox.margin>
+                        <Insets top="21.0" />
+                     </HBox.margin>
+                  </ProgressBar>
+                  <Label fx:id="lblRevenue" text="60/100%">
+                     <font>
+                        <Font name="Serif Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="-15.0" top="16.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0" style="-fx-border-color: #000080; -fx-border-radius: 0px 0px 10px 10px; -fx-border-width: 2;">
+               <children>
+                  <Label text="Tournaments Organised:">
+                     <font>
+                        <Font name="Serif Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="12.0" left="10.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ProgressBar fx:id="pbTournaments" prefWidth="200.0" progress="0.3">
+                     <HBox.margin>
+                        <Insets top="21.0" />
+                     </HBox.margin>
+                  </ProgressBar>
+                  <Label fx:id="lblTournaments" text="30/100">
+                     <font>
+                        <Font name="Serif Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="-15.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="796.0" layoutY="567.0" text="Most Popular Activity:">
+         <font>
+            <Font name="Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lvActivities" layoutX="798.0" layoutY="605.0" prefHeight="112.0" prefWidth="236.0" style="-fx-font-weight: bold; -fx-font-size: 16px; -fx-control-inner-background: #98FB98 #98FB98;" />
+      <Label fx:id="lblTotalBookings" layoutX="333.0" layoutY="85.0">
+         <font>
+            <Font name="Serif Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

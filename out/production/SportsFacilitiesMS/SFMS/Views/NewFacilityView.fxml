@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="446.0" style="-fx-border-color: #000000; -fx-background-color: #B4D6E4;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SFMS.Controllers.NewFacilityController">
+   <children>
+      <Label fx:id="lblInfo" layoutX="55.0" layoutY="460.0" />
+      <HBox layoutX="84.0" layoutY="94.0" prefHeight="352.0" prefWidth="364.0">
+         <children>
+            <VBox prefHeight="352.0" prefWidth="242.0" spacing="14.0">
+               <children>
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Facility Name" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Activity:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Type:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Price/30mins">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Min. No. of People:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Max. No. of People:" />
+                  <Label styleClass="Labels" stylesheets="@Style.css" text="Extra Notes:" />
+               </children>
+            </VBox>
+            <VBox fillWidth="false" prefHeight="352.0" prefWidth="306.0" spacing="8.0">
+               <children>
+                  <TextField fx:id="txtFacName" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <ComboBox fx:id="cbActivity" prefWidth="150.0" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtType" prefHeight="26.0" prefWidth="150.0" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtPrice" prefHeight="26.0" prefWidth="68.0" promptText="£00.00" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtMinPeople" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="67.0" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextField fx:id="txtMaxPeople" layoutX="10.0" layoutY="146.0" prefHeight="26.0" prefWidth="66.0" styleClass="TxtFields" stylesheets="@Style.css" />
+                  <TextArea fx:id="txtExtraNotes" prefHeight="142.0" prefWidth="188.0" styleClass="TxtFields" stylesheets="@Style.css" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="btnClose" layoutX="399.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnCloseOnAction" styleClass="Close" stylesheets="@Style.css" text="Close" />
+      <Label layoutX="172.0" layoutY="25.0" text="New Facility" textAlignment="CENTER">
+         <font>
+            <Font name="Serif Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSave" layoutX="313.0" layoutY="494.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="26.0" prefWidth="76.0" styleClass="Save" stylesheets="@Style.css" text="Save">
+         <font>
+            <Font name="Serif Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
