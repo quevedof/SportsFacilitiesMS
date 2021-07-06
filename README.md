@@ -1,2 +1,3 @@
 # SportsFacilitiesMS
-Final Year Project that will use the Spring Framework in the future.
+Sports Facilities Booking system implemented in Java and JavaFX.
+Uses NoSQL database: MongoDB.
